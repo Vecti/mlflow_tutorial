@@ -1,0 +1,9 @@
+name: first_tutorial
+
+python_env: python_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      first_run: {type: bool, default: 0}
+    command: "python tutorial.py {first_run}"

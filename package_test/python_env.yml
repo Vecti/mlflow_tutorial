@@ -1,0 +1,10 @@
+# Python version required to run the project.
+python: "3.9"
+# Dependencies required to build packages. This field is optional.
+build_dependencies:
+  - pip
+  - setuptools
+# Dependencies required to run the project.
+dependencies:
+  - mlflow
+  - sktime>=0.16.0
