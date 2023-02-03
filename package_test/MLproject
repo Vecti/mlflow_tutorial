@@ -4,6 +4,6 @@ python_env: conda.yaml
 
 entry_points:
   main:
-    parameters:
-      final_run: {type: bool, default: 0}
-    command: "python tutorial.py {first_run}"
+    # parameters:
+      # final_run: {type: bool, default: 0}
+    command: "python tutorial.py"

@@ -48,7 +48,7 @@ if __name__ == "__main__":
     y_train = y['1949':'1958']
     y_test = y['1959-01':'1959-12']
 
-    final_run = bool(sys.argv[1]) if len(sys.argv) >= 1 else 0
+    # final_run = bool(sys.argv[1]) if len(sys.argv) >= 1 else 0
 
 
     with mlflow.start_run():
@@ -62,11 +62,11 @@ if __name__ == "__main__":
         print("  RMSE: %s" % rmse)
         print("  MAE: %s" % mae)
         print("  R2: %s" % r2)
-        print("  Final_Run_Bool: %s" % final_run)
+        # print("  Final_Run_Bool: %s" % final_run)
 
         mlflow.log_metric("rmse", rmse)
         mlflow.log_param('cutoff', arima.cutoff)
-        mlflow.log_param('final_run', final_run)
+        # mlflow.log_param('final_run', final_run)
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
